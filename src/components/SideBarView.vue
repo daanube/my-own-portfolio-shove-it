@@ -1,4 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+    /* add fontawesome core */
+    import { library } from '@fortawesome/fontawesome-svg-core'
+    /* import all the icons in Free Solid, Free Regular, and Brands styles */
+    import { fas } from '@fortawesome/free-solid-svg-icons'
+    import { far } from '@fortawesome/free-regular-svg-icons'
+
+    library.add(fas, far)
+    /* import font awesome icon component */
+    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+</script>
 
 <!-- //////////////////////////////////////////////////////////////////////// -->
 
@@ -9,13 +19,13 @@
         </div>
         <ul class="nav-list">
             <li class="nav-item">
-                <i></i><router-link to="/">Inicio </router-link>
+                <router-link to="/"><FontAwesomeIcon icon="fa-solid fa-house" /> Inicio </router-link>
             </li>
             <li class="nav-item">
-                <router-link to="/deliverydemo">Delivery </router-link>
+                <router-link to="/deliverydemo"><FontAwesomeIcon icon="fa-solid fa-truck" /> Delivery </router-link>
             </li>
             <li class="nav-item">
-                <router-link to="/about">About </router-link>
+                <router-link to="/about"><FontAwesomeIcon icon="fa-solid fa-address-card" /> About </router-link>
             </li>
         </ul>
     </div>
@@ -34,6 +44,7 @@
         padding: 0;
         display: flex;
         flex-direction: column;
+        text-align: left;
     }
     .nav-item {
         height: 2rem;
@@ -46,6 +57,10 @@
         height: 2rem;
         padding-top: 5px;
     }
+    .nav-item a svg {
+        padding-left: 1rem;
+    }
+    
     .nav-item :hover {
         border-radius: 15px;
         background-color: #e78484;
