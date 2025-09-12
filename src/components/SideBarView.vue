@@ -1,15 +1,7 @@
 <script setup lang="ts">
-
-    /* add fontawesome core */
-    import { library } from '@fortawesome/fontawesome-svg-core'
-    /* import all the icons in Free Solid, Free Regular, and Brands styles */
-    import { fas } from '@fortawesome/free-solid-svg-icons'
-    import { far } from '@fortawesome/free-regular-svg-icons'
-
-    library.add(fas, far)
-    /* import font awesome icon component */
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-    
+    import { ref } from 'vue'
+    const drawer = ref(true)
+    const rail = ref(true)
 </script>
 
 <!-- //////////////////////////////////////////////////////////////////////// -->
@@ -18,34 +10,78 @@
 
     
     <div class="row" id="main">
+        <v-icon icon="$vuetify"></v-icon>
         <v-navigation-drawer
+            v-model="drawer"
+            :rail="rail"
+            permanent
+            @click="rail = false"
+        >
+            <v-list>
+                <v-list-item
+                    prepend-avatar="https://randomuser.me/api/portraits/men/85.jpg"
+                    title="John Leider"
+                >
+                    <template v-slot:append>
+                        <v-btn
+                            icon="mdi-chevron-left"
+                            variant="text"
+                            @click.stop="rail = !rail"
+                        ></v-btn>
+                    </template>
+                </v-list-item>
+            </v-list>
+
+            <v-divider></v-divider>
+
+            <v-list density="compact" nav>
+                <v-list-item
+                    to="/" title="Inicio"
+                    prepend-icon="mdi-home-city"
+                    value="home"
+                ></v-list-item>
+                <v-list-item
+                    to="/demos/delivery" title="Delivery"
+                    prepend-icon="mdi-account"
+                    value="delivery"
+                ></v-list-item>
+                <v-list-item
+                    prepend-icon="mdi-account-group-outline"
+                    title="Users"
+                    value="users"
+                ></v-list-item>
+            </v-list>
+        </v-navigation-drawer>
+
+        <!-- <v-navigation-drawer
             expand-on-hover
             permanent
             rail
           >
             <v-list>
-                <!-- no se porque verga no funcionan los icons -->
                 <v-list-item
                     prepend-avatar="src/assets/vue.svg"
                     title="Hola wapo,"
                     subtitle=" soy un sidebar"
                 >
-                    <!-- <p></p> -->
                 </v-list-item>
             </v-list>
     
             <v-divider></v-divider>
     
             <v-list density="compact" nav>
-              <v-list-item to="/" title="Inicio" >
-              <!-- prepend-icon="mdi-folder" title="My Files" value="myfiles" -->
-                    <!-- <FontAwesomeIcon icon="fa-solid fa-house" slot="prependIcon"/> -->
+              <v-list-item to="/" title="Inicio" 
+                prepend-icon="mdi-twitter" value="inicio"
+              >
+                <template v-slot:prepend>
+                    <v-icon size="x-large"></v-icon>
+                </template>
               </v-list-item>
 
               <v-list-item prepend-icon="mdi-account-multiple" to="/demos/delivery" title="Delivery"></v-list-item>
               <v-list-item prepend-icon="mdi-star" title="Starred" value="starred"></v-list-item>
             </v-list>
-        </v-navigation-drawer>
+        </v-navigation-drawer> -->
         <!-- <div class="col">
             <p>Hola, soy un sidebar</p>
         </div>
