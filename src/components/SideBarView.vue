@@ -11,6 +11,7 @@
     
     <div class="row" id="main">
         <v-icon icon="$vuetify"></v-icon>
+        <v-icon icon="mdi-home" />
         <v-navigation-drawer
             v-model="drawer"
             :rail="rail"
