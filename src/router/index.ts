@@ -14,6 +14,14 @@ const routes: Array<RouteRecordRaw> = [
     path: "/demos/retail",
     component: () => import("../views/Projects/RetailDemoView.vue")
   },
+  {
+    path: "/demos/healthcare",
+    component: () => import("../views/Projects/HealthCareDemoView.vue")
+  },
+  {
+    path: "/demos/lottery",
+    component: () => import("../views/Projects/LotteryDemoView.vue")
+  },
   //   path: "/",
   //   component: () => import("../layouts/SideBarLayout.vue"),
   //   children: [

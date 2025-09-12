@@ -2,16 +2,14 @@
     import { ref } from 'vue'
     const drawer = ref(true)
     const rail = ref(true)
+    const open = ref(['Projects'])
 </script>
 
 <!-- //////////////////////////////////////////////////////////////////////// -->
 
 <template>
 
-    
     <div class="row" id="main">
-        <v-icon icon="$vuetify"></v-icon>
-        <v-icon icon="mdi-home" />
         <v-navigation-drawer
             v-model="drawer"
             :rail="rail"
@@ -35,17 +33,46 @@
 
             <v-divider></v-divider>
 
-            <v-list density="compact" nav>
+            <v-list density="compact" nav
+                 v-model:opened="open"
+            >
                 <v-list-item
                     to="/" title="Inicio"
                     prepend-icon="mdi-home-city"
                     value="home"
                 ></v-list-item>
-                <v-list-item
-                    to="/demos/delivery" title="Delivery"
-                    prepend-icon="mdi-account"
-                    value="delivery"
-                ></v-list-item>
+
+                <v-list-group>
+                    <template v-slot:activator="{ props }">
+                        <v-list-item
+                            title="Proyectos" value="Projects"
+                            prepend-icon="mdi-account"
+                            v-bind="props"
+                        ></v-list-item>
+                    </template>
+
+                    <v-list-item
+                        to="/demos/delivery" title="Delivery"
+                        prepend-icon="mdi-account"
+                        value="delivery"
+                    ></v-list-item>
+                    <v-list-item
+                        to="/demos/retail" title="Retail"
+                        prepend-icon="mdi-account"
+                        value="retail"
+                    ></v-list-item>
+                    <v-list-item
+                        to="/demos/healthcare" title="Healthcare"
+                        prepend-icon="mdi-account"
+                        value="healthcare"
+                    ></v-list-item>
+                    <v-list-item
+                        to="/demos/lottery" title="Lottery"
+                        prepend-icon="mdi-account"
+                        value="lottery"
+                    ></v-list-item>
+                </v-list-group>
+                
                 <v-list-item
                     prepend-icon="mdi-account-group-outline"
                     title="Users"
@@ -115,7 +142,7 @@
         height: 98%;
         padding: 1rem 0 0 0;
     }
-    .nav-list {
+    /* .nav-list {
         list-style-type: none;
         padding: 0;
         display: flex;
@@ -127,7 +154,6 @@
         margin: 6px 5px;
     }
     .nav-item a
-    /* ,.v-list-item__prepend i */
      {
         width: 100%;
         color: #fff;
@@ -142,5 +168,7 @@
     .nav-item :hover {
         border-radius: 15px;
         background-color: #e78484;
-    }
+    } */
+
 </style>
+
