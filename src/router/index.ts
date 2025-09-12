@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory, type RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-// import WelcomeView from '../views/Welcome/WelcomeView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -8,8 +7,12 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/Welcome/WelcomeView.vue"),
   },
   {
-    path: "/deliverydemo",
-    component: () => import("../views/Projects/DeliveryDemoView.vue"),
+    path: "/demos/delivery",
+    component: () => import("../views/Projects/DeliveryDemoView.vue")
+  },
+  {
+    path: "/demos/retail",
+    component: () => import("../views/Projects/RetailDemoView.vue")
   },
   //   path: "/",
   //   component: () => import("../layouts/SideBarLayout.vue"),
