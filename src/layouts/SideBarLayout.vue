@@ -34,12 +34,11 @@
     header {
         height: 100vh;
         flex-basis: 10%;
+        min-width: 13rem;
     }
 
     main {
         flex-basis: 90%;
-        /* margin-top: 10px; */
-        /* padding: 20px; */
         display: flex;
         flex-direction: column;
     }

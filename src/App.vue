@@ -12,7 +12,11 @@
     </a>
   </div> -->
   <!-- <HelloWorld msg="Vite + Vue" /> -->
-  <router-view/>
+
+  <!-- Luego de agregar vuetify a la app -->
+  <v-app>   
+    <router-view/>
+  </v-app>
 </template>
 
 <style scoped>
