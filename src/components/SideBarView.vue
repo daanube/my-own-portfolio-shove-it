@@ -18,8 +18,9 @@
         >
             <v-list>
                 <v-list-item
-                    prepend-avatar="https://randomuser.me/api/portraits/men/85.jpg"
-                    title="John Leider"
+                    prepend-avatar="src/assets/images/avatar/avatar.png"
+                    title="Hola wapo,"
+                    subtitle="soy un nav bar"
                 >
                     <template v-slot:append>
                         <v-btn
@@ -40,6 +41,7 @@
                     to="/" title="Inicio"
                     prepend-icon="mdi-home-city"
                     value="home"
+                    rounded="xl"
                 ></v-list-item>
 
                 <v-list-group>
@@ -48,6 +50,7 @@
                             title="Proyectos" value="Projects"
                             prepend-icon="mdi-account"
                             v-bind="props"
+                            rounded="xl"
                         ></v-list-item>
                     </template>
 
@@ -55,21 +58,25 @@
                         to="/demos/delivery" title="Delivery"
                         prepend-icon="mdi-account"
                         value="delivery"
+                        rounded="xl"
                     ></v-list-item>
                     <v-list-item
                         to="/demos/retail" title="Retail"
                         prepend-icon="mdi-account"
                         value="retail"
+                        rounded="xl"
                     ></v-list-item>
                     <v-list-item
                         to="/demos/healthcare" title="Healthcare"
                         prepend-icon="mdi-account"
                         value="healthcare"
+                        rounded="xl"
                     ></v-list-item>
                     <v-list-item
                         to="/demos/lottery" title="Lottery"
                         prepend-icon="mdi-account"
                         value="lottery"
+                        rounded="xl"
                     ></v-list-item>
                 </v-list-group>
                 
@@ -77,6 +84,7 @@
                     prepend-icon="mdi-account-group-outline"
                     title="Users"
                     value="users"
+                    rounded="xl"
                 ></v-list-item>
             </v-list>
         </v-navigation-drawer>
@@ -131,44 +139,17 @@
                 <router-link to="/about"><FontAwesomeIcon icon="fa-solid fa-address-card" /> About </router-link>
             </li>
         </ul> -->
+    
     </div>
 </template>
 
 <!-- //////////////////////////////////////////////////////////////////////// -->
 
-<style lang="css">
+<style lang="css" scoped>
     #main{
         background-color: rgb(25, 37, 146);
         height: 98%;
         padding: 1rem 0 0 0;
     }
-    /* .nav-list {
-        list-style-type: none;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
-    .nav-item {
-        height: 2rem;
-        margin: 6px 5px;
-    }
-    .nav-item a
-     {
-        width: 100%;
-        color: #fff;
-        display: block;
-        height: 2rem;
-        padding-top: 5px;
-    }
-    .nav-item a svg {
-        padding-left: 1rem;
-    }
-    
-    .nav-item :hover {
-        border-radius: 15px;
-        background-color: #e78484;
-    } */
-
 </style>
 
