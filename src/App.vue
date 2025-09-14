@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// import HelloWorld from './components/HelloWorld.vue'
+  
 </script>
 
 <template>
@@ -12,6 +12,7 @@
     </a>
   </div> -->
   <!-- <HelloWorld msg="Vite + Vue" /> -->
+
 
   <!-- Luego de agregar vuetify a la app -->
   <v-app>   
