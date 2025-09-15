@@ -8,7 +8,7 @@
 
     <SideBarLayout>
         <div class="row" id="healthcare">
-            <div class="col-12">
+            <div class="col-12 slotArea">
                 <p>Hola, soy healthcare</p>
             </div>
         </div>
@@ -19,9 +19,5 @@
 <!-- //////////////////////////////////////////////////////////////////////// -->
 
 <style lang="css">
-    #healthcare {
-        display: flex;
-        flex-basis: 90%;
-        padding: 1rem 2rem;
-    }
+   
 </style>

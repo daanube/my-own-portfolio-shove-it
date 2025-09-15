@@ -7,9 +7,8 @@
 <template>
 
     <SideBarLayout>
-
         <div class="row" id="welcome">
-            <div class="col-12">
+            <div class="col-12 slotArea">
                 <p>Hola, soy welcome</p>
             </div>
         </div>
@@ -20,9 +19,5 @@
 <!-- //////////////////////////////////////////////////////////////////////// -->
 
 <style lang="css">
-    #welcome{
-        display: flex;
-        flex-basis: 90%;
-        padding: 1rem 2rem;
-    }
+    
 </style>

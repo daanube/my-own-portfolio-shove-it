@@ -151,5 +151,10 @@
         height: 98%;
         padding: 1rem 0 0 0;
     }
+ 
+    .v-list-group__items .v-list-item {
+        padding-left: 20px !important;
+    }
+
 </style>
 
