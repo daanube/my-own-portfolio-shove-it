@@ -13,9 +13,12 @@
 
     <main>
       <slot />
+      <button class="goUpBtn"></button>
       <FooterView />
     </main>
   </div>
+
+
 </template>
 
 <!-- //////////////////////////////////////////////////////////////////////// -->
@@ -33,17 +36,39 @@
 
     header {
         height: 100vh;
-        flex-basis: 10%;
-        min-width: 13rem;
+        /* flex-basis: 5%; */
+        /* min-width: 13rem; */
+        min-width: 3rem;
     }
 
     main {
-        flex-basis: 90%;
+        flex-basis: 100%;
         display: flex;
         flex-direction: column;
     }
 
     slot {
-      flex-basis: 90%;
+      flex-basis: 100%;
     }
+
+    .goUpBtn {
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--baseColor);
+      position: absolute;
+      bottom: 50px;
+      right: 50px;
+      border: solid 3px #fff;
+      border-radius: 50% !important;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .goUpBtn:focus-visible, .goUpBtn:focus {
+      outline: unset;
+    }
+
+    .goUpBtn:hover {
+
+    }
+
 </style>

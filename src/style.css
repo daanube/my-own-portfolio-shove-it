@@ -11,6 +11,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* ***************************************  */
+  /* Modificaciones */
+
+  --lightColor-2: #cce3ed;
+  --lightColor-1: #00b2ff;
+  --baseColor: #018dc9;
+  --darkColor-1: #26617a;
+  --darkColor-2: #011e2a;
+  --darkColor-3: #011219;
+  --greyishBlack: #151516;
+
 }
 
 a {
@@ -62,18 +74,6 @@ button:focus-visible {
 /* ////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* Modificaciones */
 
-:root {
-  /* --primaryColor: #6495ed;
-  --secondaryColor: #faf0e6; */
-
-  --lightColor-2: #cce3ed;
-  --lightColor-1: #00b2ff;
-  --baseColor: #018dc9;
-  --darkColor-1: #26617a;
-  --darkColor-2: #011e2a;
-  --darkColor-3: #011219;
-}
-
 #app {
   /* min-width: 1280px; */
   /* max-width: 1280px; */
@@ -81,6 +81,21 @@ button:focus-visible {
   /* padding: 2rem; */
   /* text-align: center; */
   width: 100%;
+}
+
+#welcome, #delivery, #retail, #healthcare, #lottery {
+    display: flex;
+    flex-basis: 100%;
+    padding: 1rem 2rem;
+}
+
+#footer {
+    background-color: var(--greyishBlack);
+    color: #fff;
+    display: flex;
+    place-items: flex-end;
+    padding: 0rem 1.5rem;
+    height: 2rem;
 }
 
 .v-list-item--rounded,
@@ -132,6 +147,11 @@ button:focus-visible {
 
 .v-list-item:hover > .v-list-item__overlay {
     opacity: 0.5 !important;
+}
+
+.slotArea {
+    width: 90vw;
+    background-color: var(--darkColor-3);
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////// */
