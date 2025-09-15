@@ -86,7 +86,8 @@ button:focus-visible {
 #welcome, #delivery, #retail, #healthcare, #lottery {
     display: flex;
     flex-basis: 100%;
-    padding: 1rem 2rem;
+    padding: 0;
+    margin-left: 0.5rem;
 }
 
 #footer {
@@ -150,8 +151,9 @@ button:focus-visible {
 }
 
 .slotArea {
-    width: 90vw;
+    width: 100%;
     background-color: var(--darkColor-3);
+    padding: 1rem;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////// */
