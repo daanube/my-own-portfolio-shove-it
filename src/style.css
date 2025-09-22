@@ -83,7 +83,8 @@ button:focus-visible {
   width: 100%;
 }
 
-#welcome, #delivery, #retail, #healthcare, #lottery {
+#welcome, #delivery, #retail, #healthcare, #lottery,
+.Header {
     display: flex;
     flex-basis: 100%;
     padding: 0;
