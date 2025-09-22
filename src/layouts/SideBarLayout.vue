@@ -36,8 +36,6 @@
 
     header {
         height: 100vh;
-        /* flex-basis: 5%; */
-        /* min-width: 13rem; */
         min-width: 3rem;
     }
 
@@ -45,6 +43,7 @@
         flex-basis: 100%;
         display: flex;
         flex-direction: column;
+        background-color: var(--darkColor-3);
     }
 
     slot {
@@ -55,7 +54,7 @@
       width: 3rem;
       height: 3rem;
       background-color: var(--baseColor);
-      position: absolute;
+      position: fixed;
       bottom: 50px;
       right: 50px;
       border: solid 3px #fff;

@@ -7,7 +7,7 @@
 <template>
 
     <SideBarLayout>
-        <div class="row" id="healthcare">
+        <div class="row mainTitle" id="healthcare">
             <div class="col-12 slotArea">
                 <p>Hola, soy healthcare</p>
             </div>
