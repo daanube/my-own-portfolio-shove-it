@@ -13,7 +13,6 @@
   </div> -->
   <!-- <HelloWorld msg="Vite + Vue" /> -->
 
-
   <!-- Luego de agregar vuetify a la app -->
   <v-app>   
     <router-view/>
