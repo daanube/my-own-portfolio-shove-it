@@ -9,7 +9,7 @@
 
 <template>
 
-    <div class="row" id="main">
+    <div class="row" id="mainNav">
         <v-navigation-drawer
             v-model="drawer"
             :rail="rail"
@@ -146,10 +146,10 @@
 <!-- //////////////////////////////////////////////////////////////////////// -->
 
 <style lang="css" scoped>
-    #main{
-        background-color: rgb(25, 37, 146);
+    #mainNav{
+        /* background-color: rgb(25, 37, 146);
         height: 98%;
-        padding: 1rem 0 0 0;
+        padding: 1rem 0 0 0; */
     }
  
     .v-list-group__items .v-list-item {

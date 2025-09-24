@@ -35,7 +35,7 @@
     }
 
     header {
-        height: 100vh;
+        /* height: 100vh; */
         min-width: 3rem;
     }
 
