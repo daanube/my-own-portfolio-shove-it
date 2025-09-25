@@ -11,15 +11,27 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* ***************************************  */
+  /* Modificaciones */
+
+  --lightColor-2: #cce3ed;
+  --lightColor-1: #00b2ff;
+  --baseColor: #018dc9;
+  --darkColor-1: #26617a;
+  --darkColor-2: #011e2a;
+  --darkColor-3: #011219;
+  --greyishBlack: #151516;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  /* color: #646cff; */
+  color: #fff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #fff;
 }
 
 body {
@@ -27,7 +39,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 h1 {
@@ -58,15 +70,115 @@ button:focus-visible {
   padding: 2em;
 }
 
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Modificaciones */
+
 #app {
-  /* min-width: 1280px; */
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
-  text-align: center;
   width: 100%;
 }
 
+.mainTitle {
+    display: flex;
+    flex-basis: 100%;
+    padding: 0;
+    margin-left: 0.7rem;
+}
+
+#footer {
+    background-color: var(--greyishBlack);
+    color: #fff;
+    display: flex;
+    place-items: anchor-center;
+    padding: 0rem 1.5rem;
+    height: 3rem;
+}
+
+.v-list-item--rounded,
+.v-list-item__overlay {
+    border-radius: 24px !important;
+}
+.v-navigation-drawer__content,
+.v-navigation-drawer .v-list {
+  background-color: var(--darkColor-2);
+}
+
+.v-list-item--variant-text .v-list-item__overlay {
+  background: var(--darkColor-1) !important;
+  color: #fff;
+}
+
+.v-navigation-drawer--left {
+    border-right-width: inherit !important;
+}
+
+.v-list-item--variant-plain, .v-list-item--variant-outlined, .v-list-item--variant-text, .v-list-item--variant-tonal {
+    color: #fff !important;
+    opacity: var(--v-medium-emphasis-opacity);
+}
+
+.v-list-item--nav {
+  padding-inline: 8px !important;
+}
+
+.v-list-item--active > .v-list-item__overlay,
+.v-list-item[aria-haspopup=menu][aria-expanded=true] > .v-list-item__overlay,
+.v-list-item.v-list-item--link:hover {
+    opacity: 1 !important;
+    background: unset !important;
+}
+
+.v-list-item--active, .v-list-item[aria-haspopup=menu][aria-expanded=true] {
+    opacity: calc(var(--v-activated-opacity) * var(--v-theme-overlay-multiplier));
+}
+
+.v-list-item--active {
+    border-radius: 24px !important;
+    background: var(--darkColor-1) !important;
+}
+
+.v-list-group__items {
+    margin-left: 50px;
+}
+
+.v-list-item:hover > .v-list-item__overlay {
+    opacity: 0.5 !important;
+}
+
+.slotArea {
+    width: 100%;
+    background-color: var(--darkColor-3);
+    padding: 1rem;
+}
+
+html {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* timelineCardComponent */
+.demoBtn:hover {
+    /* background-color: #12d392 !important;
+    border-color: #12d392 !important; */
+    background-color: var(--lightColor-1);
+    border-color: var(--lightColor-1);
+}
+.demoBtn:hover .v-btn__content {
+    color: #172030 !important;
+}
+.demoBtn span.v-btn__overlay,
+.demoBtn span.v-btn__underlay {
+    background-color: transparent;
+}
+/* ////////////////////////////////////////////////// */
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* @media */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
