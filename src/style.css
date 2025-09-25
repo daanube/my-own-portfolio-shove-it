@@ -160,6 +160,23 @@ html {
   display: none;
 }
 
+/* timelineCardComponent */
+.demoBtn:hover {
+    /* background-color: #12d392 !important;
+    border-color: #12d392 !important; */
+    background-color: var(--lightColor-1);
+    border-color: var(--lightColor-1);
+}
+.demoBtn:hover .v-btn__content {
+    color: #172030 !important;
+}
+.demoBtn span.v-btn__overlay,
+.demoBtn span.v-btn__underlay {
+    background-color: transparent;
+}
+/* ////////////////////////////////////////////////// */
+
+
 /* ////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* @media */
 @media (prefers-color-scheme: light) {
