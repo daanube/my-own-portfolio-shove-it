@@ -28,26 +28,24 @@
 
 <template>
     <v-card class="jobCard">
-        <v-card-title 
-        >
-        <!-- style="background-color: brown;" -->
-            {{ props.companyInfo.companyName }}
-            <v-card-subtitle>
+        <v-card-title style="display:grid;grid-template-areas: 'left right';">
+            <div style="grid-area: left;">
+                {{ props.companyInfo.companyName }}
+            </div>
+            <div style="grid-area: right; opacity: 0.7;">
                 {{props.companyInfo.companyDuration}}
-            </v-card-subtitle>
+            </div>
+            <!-- <v-card-subtitle>
+            </v-card-subtitle> -->
         </v-card-title>
-        <v-card-text 
-        >
-        <!-- style="background-color: aqua;" -->
+        <v-card-text>
             <ul>
                 <li v-for="t in props.companyInfo.tasksList" class="taskListItem">
                     {{t}}
                 </li>
             </ul>
         </v-card-text>
-        <v-card-actions 
-        >
-        <!-- style="background-color: cadetblue;" -->
+        <v-card-actions>
             <v-btn density="comfortable" variant="outlined" class="demoBtn">ver demo</v-btn>
         </v-card-actions>
     </v-card>  
@@ -69,6 +67,20 @@
     }
     .taskListItem {
         text-align: justify;
+    }
+    .v-card-title,
+    .v-card-text {
+        padding: 0;
+    }
+    .v-card-actions {
+        padding: 0 0.5rem;
+        min-height: 40px;
+    }
+    .v-card-title {
+        font-size: 1rem;
+    }
+    .v-card-subtitle {
+        font-size: 0.8rem;
     }
     /* .demoBtn:hover {
         color: #12d392 !important;
