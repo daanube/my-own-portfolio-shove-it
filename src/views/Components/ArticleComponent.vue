@@ -28,7 +28,7 @@
         margin: 1rem 0 auto;
         padding: 1rem;
         /* height: 10rem; */
-        height: 1024px;
+        /* height: 1024px; */
         display: flex;
     }
     #ArticleTitle {
