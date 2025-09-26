@@ -14,7 +14,7 @@ import TimelineComponent from '../Components/TimelineComponent.vue';
 <template>
 
     <SideBarLayout>
-        <div class="row mainTitle" id="welcome">
+        <div class="row mainTitle" id="mainTitle">
             <div class="col-12 slotArea">
                 <MainTitleComponent :mainTitleText='welcomeTitle' :image-url='`url(${bgUrl})`' />
                 <TimelineComponent />
