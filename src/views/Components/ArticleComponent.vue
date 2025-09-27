@@ -35,5 +35,8 @@
         width: 100%;
         text-align: center;
         padding: 1rem;
+        text-align: justify;
+        overflow-wrap: break-word;
+        font-weight: 400;
     }
 </style>
