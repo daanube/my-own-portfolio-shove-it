@@ -91,6 +91,8 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
       will-change: transform;
       transition: transform 450ms;
+      transition-property: transform, opacity;
+      transition-duration: 450ms;
     }
 
     #goUpBtn:focus-visible, #goUpBtn:focus {
@@ -102,7 +104,6 @@
     }
 
     .btn--hidden {
-      display: none;
-      transition: opacity 250ms 300ms;
+      opacity: 0;
     }
 </style>
