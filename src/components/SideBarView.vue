@@ -18,7 +18,7 @@
         >
             <v-list>
                 <v-list-item
-                    prepend-avatar="src/assets/images/avatar/avatar.png"
+                    prepend-avatar="/images/avatar/avatar.png"
                     title="Hola wapo,"
                     subtitle="soy un nav bar"
                 >
