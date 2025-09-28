@@ -146,11 +146,11 @@
 <!-- //////////////////////////////////////////////////////////////////////// -->
 
 <style lang="css" scoped>
-    #mainNav{
-        /* background-color: rgb(25, 37, 146);
+    /* #mainNav{
+        background-color: rgb(25, 37, 146);
         height: 98%;
-        padding: 1rem 0 0 0; */
-    }
+        padding: 1rem 0 0 0;
+    } */
  
     .v-list-group__items .v-list-item {
         padding-left: 20px !important;
