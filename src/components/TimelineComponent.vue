@@ -51,14 +51,19 @@
 <!-- //////////////////////////////////////////////////////////////////////// -->
 
 <template>
-    <article>
+    <article id="timelineArticle">
         <div class="timeline-grid-container">
             <div class="timeline-item1">
-                <div id="title">Historial laboral</div>
+                <h2 id="title">Historial laboral</h2>
             </div>
             <div class="repeatable-timeline-item">
                 <div class="inner-timeline-item1">
-                    
+                    <p class="companyName">
+                        {{ laboralHistory1.companyName }}
+                    </p>
+                    <p class="companyDuration">
+                        {{ laboralHistory1.companyDuration }}
+                    </p>
                 </div>
                 <!-- <div class="inner-timeline-item2">
                     <v-icon
@@ -83,13 +88,24 @@
                         size="large"
                     ></v-icon>
                 </div> -->
-                <div class="inner-timeline-item3">
-                    
+                <div class="inner-timeline-item3">                    
+                    <p class="companyName">
+                        {{ laboralHistory2.companyName }}
+                    </p>
+                    <p class="companyDuration">
+                        {{ laboralHistory2.companyDuration }}
+                    </p>
                 </div>
             </div>
             
             <div class="repeatable-timeline-item">
                 <div class="inner-timeline-item1">
+                    <p class="companyName">
+                        {{ laboralHistory3.companyName }}
+                    </p>
+                    <p class="companyDuration">
+                        {{ laboralHistory3.companyDuration }}
+                    </p>
                     
                 </div>
                 <!-- <div class="inner-timeline-item2">
@@ -116,12 +132,23 @@
                     ></v-icon>
                 </div> -->
                 <div class="inner-timeline-item3">
+                    <p class="companyName">
+                        {{ laboralHistory4.companyName }}
+                    </p>
+                    <p class="companyDuration">
+                        {{ laboralHistory4.companyDuration }}
+                    </p>
                 </div>
             </div>
             
             <div class="repeatable-timeline-item">
                 <div class="inner-timeline-item1">
-                    
+                    <p class="companyName">
+                        {{ laboralHistory5.companyName }}
+                    </p>
+                    <p class="companyDuration">
+                        {{ laboralHistory5.companyDuration }}
+                    </p>                    
                 </div>
                 <!-- <div class="inner-timeline-item2">
                     <v-icon
@@ -145,18 +172,23 @@
 <!-- //////////////////////////////////////////////////////////////////////// -->
 
 <style lang="css" scoped>
+    #timelineArticle {
+        margin: 2rem 0;    
+    }
+
     #title {
         text-align: center;
         color: var(--baseColor);
         font-size: 1.5rem;
         padding-bottom: 0.2rem;
+        margin-bottom: 1rem;
         border-bottom-color: var(--baseColor);
         border-bottom-width: medium;
         border-bottom-style: outset;
     }
 
     .timeline-grid-container {
-        width: 50%;
+        width: 70%;
         margin: 2rem auto;
         display: grid;
         grid-template-areas:
@@ -216,7 +248,9 @@
         grid-area: header;
         text-align: center;
         color: #ffffff;
-        height: 2rem;
+        /* height: 2rem; */
+        display: flex;
+        flex-direction: column;
     }
 
     .timeline-item3 {
@@ -253,6 +287,17 @@
         rotate: 180deg;
     }
 
+    .companyName {
+        font-size: 6rem;
+        font-weight: 600;
+        margin: -0.5rem auto 0 auto;
+        padding: 0;
+        letter-spacing: -5px;
+    }
+
+    .companyDuration {
+        margin-top: -1rem;
+    }
     /* @media (min-width: 900px) {
         .timeline-grid-container { grid-template-columns: repeat(1, 1fr); }
     } */

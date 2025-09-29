@@ -148,6 +148,8 @@ button:focus-visible {
     width: 100%;
     background-color: var(--darkColor-3);
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 html {

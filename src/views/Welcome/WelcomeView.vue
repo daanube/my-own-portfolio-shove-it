@@ -4,6 +4,7 @@
     import Article from '../../components/ArticleComponent.vue';
     import Timeline from '../../components/TimelineComponent.vue';
     import TechStackChipList from '../../components/TechStackChipListComponent.vue';
+    import Contact from '../../components/ContactComponent.vue';
 
     const welcomeMainTitle = "DAVID NUÑEZ DESARROLLADOR";
     const bgUrl = "/images/bgs/michelle-ding-unsplash.jpg";
@@ -13,6 +14,7 @@
     const upright = "Orientado \n a FrontEnd";
     const downright = "Que se yo, otra vez";
     const availability = "Disponible para trabajar";
+    const techStackTitle = "Habilidades principales";
 </script>
 
 <!-- //////////////////////////////////////////////////////////////////////// -->
@@ -23,6 +25,7 @@
         <div class="row mainTitle" id="mainTitle">
             <div class="col-12 slotArea">
                 <MainTitle :mainTitleText='welcomeMainTitle' :image-url='`url(${bgUrl})`' />
+                
                 <article id="welcomeArticle">
                     <v-chip id="availability" prepend-icon="mdi-check-circle" :link="false">
                         {{ availability }}
@@ -43,12 +46,17 @@
                             {{ upright }}
                         </div>
                         <div class="gridRight" id="downright">
-                            {{ downright }}
+                            <!-- {{ downright }} -->
+                            <Contact v-show=true />
                         </div>
                     </div>                    
                 </article>
-                <!-- <p class="falta"> </p> -->
-                <TechStackChipList />
+
+                <article id="techStackArticle">
+                    <h2 id="techStackArticleTitle">{{ techStackTitle }}</h2>
+                    <TechStackChipList />
+                </article>
+
                 <Timeline />
                 <Article :about="true" :articleTitle="aboutTitle" :articleText="aboutText" />
             </div>
@@ -70,8 +78,8 @@
         display: grid;
         grid-template-areas: 'left upright' 'left downright';
         gap: 5px;
-        background-color: var(--darkColor-2);
-        padding: 10px;
+        /* background-color: var(--darkColor-2); */
+        padding: 15px;
         /* height: 10rem; */
     }
     #expNumberContainer {
@@ -80,12 +88,13 @@
         padding: 10px;
     }
     #expNumber {
-        font-size: 10rem;
+        font-size: 9rem;
         font-weight: 600;
-        margin: -1rem auto 0 auto;
+        margin: -3rem auto 0 auto;
         padding: 0;
         width: 50%;
         letter-spacing: -20px;
+        align-content: center;
     }
     #expYears {
         font-size: 2rem;
@@ -99,18 +108,24 @@
         width: 50%;
     }
     .gridRight{
-        background-color: var(--darkColor-3);
+        background-color: var(--darkColor-2);
         padding: 10px;
-        border-radius: 25px;
+        margin-left: 5rem;
+        /* background-color: var(--darkColor-3); */
+        /* border-radius: 25px; */
     }
     #upright {
+        border-radius: 25px 25px 0 0;
         grid-area: upright;
-        white-space: pre-line;
         font-size: 2rem;
         font-weight: 700;
+        align-content: center;
+        /* white-space: pre-line; */
     }
     #downright {
+        border-radius: 0 0 25px 25px;
         grid-area: downright;
+        display: flex;
     }
     #welcomeArticleTitle {
         display: flex;
@@ -120,7 +135,7 @@
         color: var(--baseColor);
         text-align: center;
         padding: 1rem;
-        margin: 0 auto;
+        margin: 3rem auto;
     }
     #availability {
         margin: 2rem auto;
@@ -129,5 +144,19 @@
         flex-flow: row;
         color: var(--baseColor);
         width: 10rem;
+    }
+    #techStackArticle{
+        border-radius: 5px;
+        background-color: var(--darkColor-2);
+        color:  var(--baseColor);
+        margin: 2rem 0;
+        padding: 1.5rem;
+    }
+    
+    #techStackArticleTitle {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        overflow-wrap: break-word;
     }
 </style>

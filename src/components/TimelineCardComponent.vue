@@ -29,12 +29,12 @@
 <template>
     <v-card class="jobCard">
         <v-card-title style="display:grid;grid-template-areas: 'left right';">
-            <div style="grid-area: left;">
+            <!-- <div style="grid-area: left;">
                 {{ props.companyInfo.companyName }}
             </div>
             <div style="grid-area: right; opacity: 0.7;">
                 {{props.companyInfo.companyDuration}}
-            </div>
+            </div> -->
             <!-- <v-card-subtitle>
             </v-card-subtitle> -->
         </v-card-title>
@@ -82,15 +82,4 @@
     .v-card-subtitle {
         font-size: 0.8rem;
     }
-    /* .demoBtn:hover {
-        color: #12d392 !important;
-        border-color: #12d392 !important;
-    }
-    .demoBtn:hover .v-btn__content {
-        color: #172030 !important;
-    }
-    .demoBtn span.v-btn__overlay,
-    .demoBtn span.v-btn__underlay {
-        background-color: transparent;
-    } */
 </style>

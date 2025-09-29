@@ -35,8 +35,8 @@
 
 <template>
     <article class="stackListArticle">
-        <v-chip-group v-for="tech in stackList">
-            <v-chip :prepend-icon="tech.icon" :link="false">
+        <v-chip-group id="group">
+            <v-chip class="techChip" v-for="tech in stackList" :prepend-icon="tech.icon" :link="false">
               {{tech.name}}
             </v-chip>
         </v-chip-group>
@@ -47,10 +47,17 @@
 
 <style lang="css" scoped>
     .stackListArticle {
-        margin-top: 1rem;
+        margin: 2rem auto;
         padding: 0 1rem;
         display: flex;
         flex-flow: row;
         color: var(--baseColor);
+    }
+    #group {
+        display: flex;
+        margin: 0 auto;
+    }
+    .techChip {
+        font-size: 1.1rem;
     }
 </style>
