@@ -60,13 +60,13 @@
                 <div class="inner-timeline-item1">
                     
                 </div>
-                <div class="inner-timeline-item2">
+                <!-- <div class="inner-timeline-item2">
                     <v-icon
                         color="green-darken-2"
                         icon="mdi-arrow-right-bold-circle"
                         size="large"
                     ></v-icon>
-                </div>
+                </div> -->
                 <div class="inner-timeline-item3">
                     <TimelineCardComponent :companyInfo="laboralHistory1" ></TimelineCardComponent>  
                 </div>
@@ -76,13 +76,13 @@
                 <div class="inner-timeline-item1">
                     <TimelineCardComponent :companyInfo="laboralHistory2"></TimelineCardComponent>  
                 </div>
-                <div class="inner-timeline-item2">
+                <!-- <div class="inner-timeline-item2">
                     <v-icon
                         color="green-darken-2"
                         icon="mdi-arrow-right-bold-circle"
                         size="large"
                     ></v-icon>
-                </div>
+                </div> -->
                 <div class="inner-timeline-item3">
                     
                 </div>
@@ -92,13 +92,13 @@
                 <div class="inner-timeline-item1">
                     
                 </div>
-                <div class="inner-timeline-item2">
+                <!-- <div class="inner-timeline-item2">
                     <v-icon
                         color="green-darken-2"
                         icon="mdi-arrow-right-bold-circle"
                         size="large"
                     ></v-icon>
-                </div>
+                </div> -->
                 <div class="inner-timeline-item3">
                     <TimelineCardComponent :companyInfo="laboralHistory3"></TimelineCardComponent>  
                 </div>
@@ -108,13 +108,13 @@
                 <div class="inner-timeline-item1">
                     <TimelineCardComponent :companyInfo="laboralHistory4"></TimelineCardComponent>  
                 </div>
-                <div class="inner-timeline-item2">
+                <!-- <div class="inner-timeline-item2">
                     <v-icon
                         color="green-darken-2"
                         icon="mdi-arrow-right-bold-circle"
                         size="large"
                     ></v-icon>
-                </div>
+                </div> -->
                 <div class="inner-timeline-item3">
                 </div>
             </div>
@@ -123,13 +123,13 @@
                 <div class="inner-timeline-item1">
                     
                 </div>
-                <div class="inner-timeline-item2">
+                <!-- <div class="inner-timeline-item2">
                     <v-icon
                         color="green-darken-2"
                         icon="mdi-arrow-right-bold-circle"
                         size="large"
                     ></v-icon>
-                </div>
+                </div> -->
                 <div class="inner-timeline-item3">
                     <TimelineCardComponent :companyInfo="laboralHistory5"></TimelineCardComponent>          
                 </div>
