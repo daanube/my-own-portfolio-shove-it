@@ -1,8 +1,8 @@
 <script setup lang="ts">
   import { computed, ref } from 'vue';
   import { useGoTo } from 'vuetify'
-  import FooterView from '../components/FooterView.vue';
-  import SideBarView from '../components/SideBarView.vue';
+  import Footer from '../components/FooterComponent.vue';
+  import SideBar from '../components/SideBarComponent.vue';
 
   const goUp = useGoTo()
   const options = computed(() => ({
@@ -37,15 +37,16 @@
 <template>
   <div class="two-column-layout" id="two-column-layout">
     <header>
-      <SideBarView />
+      <SideBar />
     </header>
 
     <main id="main">
       <slot />
-      <button id="goUpBtn" @click="goUp(0, options)"
+      <button 
+        id="goUpBtn" @click="goUp(0, options)"
         :class="{ 'btn--hidden': showBtn }"
       />
-      <FooterView />
+      <Footer />
     </main>
   </div>
 

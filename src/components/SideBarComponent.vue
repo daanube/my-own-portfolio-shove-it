@@ -89,68 +89,17 @@
             </v-list>
         </v-navigation-drawer>
 
-        <!-- <v-navigation-drawer
-            expand-on-hover
-            permanent
-            rail
-          >
-            <v-list>
-                <v-list-item
-                    prepend-avatar="src/assets/vue.svg"
-                    title="Hola wapo,"
-                    subtitle=" soy un sidebar"
-                >
-                </v-list-item>
-            </v-list>
-    
-            <v-divider></v-divider>
-    
-            <v-list density="compact" nav>
-              <v-list-item to="/" title="Inicio" 
-                prepend-icon="mdi-twitter" value="inicio"
-              >
-                <template v-slot:prepend>
-                    <v-icon size="x-large"></v-icon>
-                </template>
-              </v-list-item>
-
-              <v-list-item prepend-icon="mdi-account-multiple" to="/demos/delivery" title="Delivery"></v-list-item>
-              <v-list-item prepend-icon="mdi-star" title="Starred" value="starred"></v-list-item>
-            </v-list>
-        </v-navigation-drawer> -->
-        <!-- <div class="col">
-            <p>Hola, soy un sidebar</p>
-        </div>
-        <ul class="nav-list">
-            <li class="nav-item">
-                <router-link to="/"><FontAwesomeIcon icon="fa-solid fa-house" /> Inicio </router-link>
-            </li>
-            <li class="nav-item"> Proyectos
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <router-link to="/demos/delivery"><FontAwesomeIcon icon="fa-solid fa-truck" /> Delivery </router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link to="/demos/retail"><FontAwesomeIcon icon="fa-solid fa-truck" /> Retail </router-link>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <router-link to="/about"><FontAwesomeIcon icon="fa-solid fa-address-card" /> About </router-link>
-            </li>
-        </ul> -->
-    
     </div>
 </template>
 
 <!-- //////////////////////////////////////////////////////////////////////// -->
 
 <style lang="css" scoped>
-    #mainNav{
-        /* background-color: rgb(25, 37, 146);
+    /* #mainNav{
+        background-color: rgb(25, 37, 146);
         height: 98%;
-        padding: 1rem 0 0 0; */
-    }
+        padding: 1rem 0 0 0;
+    } */
  
     .v-list-group__items .v-list-item {
         padding-left: 20px !important;
