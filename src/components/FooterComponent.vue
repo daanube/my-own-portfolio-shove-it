@@ -7,7 +7,7 @@
 <template>
     <div class="row" id="footer">
         <div class="col-12">
-            <span>Hola, soy un footer <v-icon>mdi-copyright</v-icon>{{ currentYear }}</span>
+            <span>Hola, soy un footer. {{ currentYear }}</span>
         </div>
     </div>
 </template>

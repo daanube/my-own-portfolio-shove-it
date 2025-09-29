@@ -17,7 +17,13 @@
             type: "linkedin",
             icon: "mdi mdi-linkedin",
             link: "https://www.linkedin.com/in/daanube/"
-        }        
+        },
+        {
+            text: "GitHub",
+            type: "github",
+            icon: "mdi mdi-github",
+            link: "https://www.github.com/daanube/"
+        }     
     ]
 
     function handleContactAction(contact:any) {
@@ -40,8 +46,8 @@
 
 <template>
     <article class="contactListArticle">
-        <v-chip-group v-for="c in contactList">
-            <v-chip class="contactChip" :prepend-icon="c.icon" :link="false" @click="handleContactAction(c)">
+        <v-chip-group>
+            <v-chip v-for="c in contactList" class="contactChip" :prepend-icon="c.icon" :link="false" @click="handleContactAction(c)">
               {{c.text}}
             </v-chip>
         </v-chip-group>
@@ -60,5 +66,6 @@
     }
     .contactChip {
         cursor: pointer;
+        font-size: 1.1rem;
     }
 </style>
