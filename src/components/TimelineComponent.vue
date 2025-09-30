@@ -5,9 +5,9 @@
         companyName: "IA 2030",
         companyDuration: "2022-2025",
         tasksList: [
-            "Responsabilidad más larga para ver como se ve más texto",
-            "Responsabilidad 2",
-            "Responsabilidad 3",
+            "Crear un actualizador automático para una aplicación de escritorio.",
+            "Reestructurar completamente una app web creada en Vue3.",
+            "Realizar pruebas como QA y crear manuales de usuario.",
         ]  
     }
     const laboralHistory2 = {
@@ -293,10 +293,12 @@
         margin: -0.5rem auto 0 auto;
         padding: 0;
         letter-spacing: -5px;
+        color: var(--lightColor-1);
     }
-
+    
     .companyDuration {
         margin-top: -1rem;
+        color: var(--darkColor-1);
     }
     /* @media (min-width: 900px) {
         .timeline-grid-container { grid-template-columns: repeat(1, 1fr); }
