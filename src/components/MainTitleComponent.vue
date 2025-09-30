@@ -33,15 +33,13 @@
     .mainTitle {
         display: flex;
         flex-basis: 100%;
-        /* padding: 0; */
+        padding: 0;
         margin: 0 auto;
         margin-left: 0.7rem;
-        padding: 3rem 0;
-        width: 100%;
+        padding: 3rem 0 4rem 0;
         color: #fff;
         text-align: center;
-        /* font-size: 140px; */
-        font-size: 130px;
+        font-size: 140px;
         font-weight: bolder;
         text-transform: uppercase;
         z-index: 1;

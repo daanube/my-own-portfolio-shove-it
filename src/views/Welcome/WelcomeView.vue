@@ -36,7 +36,7 @@
                     <div id="expGrid">
                         <div id="expNumberContainer">
                             <p id="expNumber">
-                                5+
+                                +5
                             </p>
                             <p id="expYears">
                                 {{expYears}}
@@ -53,7 +53,7 @@
                 </article>
 
                 <article id="techStackArticle">
-                    <h2 id="techStackArticleTitle">{{ techStackTitle }}</h2>
+                    <h2 class="sectionTitle" id="techStackArticleTitle">{{ techStackTitle }}</h2>
                     <TechStackChipList />
                 </article>
 

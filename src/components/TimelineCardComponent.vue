@@ -58,7 +58,7 @@
         padding: 0.5rem;
         border-radius: 25px;
         background-color: var(--darkColor-2);
-        border-color: var(--darkColor-1);
+        /* border-color: var(--darkColor-1); */
         border-width: 0.3rem;
         color: var(--lightColor-1);
         /* background-color: #172030; */
