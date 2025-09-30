@@ -30,7 +30,7 @@
 
 <template>
     <article id="Article">
-        <h2 id="ArticleTitle" v-if=props.articleTitle>{{ props.articleTitle }}</h2>
+        <h2 class="sectionTitle" id="ArticleTitle" v-if=props.articleTitle>{{ props.articleTitle }}</h2>
         <p id="ArticleText"
             v-for="p in textParts"
         >

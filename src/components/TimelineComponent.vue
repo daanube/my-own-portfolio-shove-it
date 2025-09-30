@@ -54,7 +54,7 @@
     <article id="timelineArticle">
         <div class="timeline-grid-container">
             <div class="timeline-item1">
-                <h2 id="title">Historial laboral</h2>
+                <h2 class="sectionTitle" id="title">Historial laboral</h2>
             </div>
             <div class="repeatable-timeline-item">
                 <div class="inner-timeline-item1">
@@ -179,7 +179,7 @@
     #title {
         text-align: center;
         color: var(--baseColor);
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
         padding-bottom: 0.2rem;
         margin-bottom: 1rem;
         border-bottom-color: var(--baseColor);

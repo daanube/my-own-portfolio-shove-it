@@ -58,11 +58,12 @@
 
 <style lang="css" scoped>
     .contactListArticle {
-        margin: 1rem auto;
+        margin: 0 auto;
         padding: 0 1rem;
         display: flex;
         flex-flow: row;
         color: var(--baseColor);
+        align-items: center;
     }
     .contactChip {
         cursor: pointer;
