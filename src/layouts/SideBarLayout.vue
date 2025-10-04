@@ -45,7 +45,13 @@
       <button 
         id="goUpBtn" @click="goUp(0, options)"
         :class="{ 'btn--hidden': showBtn }"
-      />
+      >
+         <v-icon
+            color="var(--baseColor)"
+            icon="mdi mdi-chevron-up"
+            size="large"
+          />
+      </button>
       <Footer />
     </main>
   </div>
@@ -86,14 +92,15 @@
       width: 3rem;
       height: 3rem;
       cursor: pointer;
-      background-color: var(--baseColor);
-      border: solid 3px #fff;
+      background-color: var(--darkColor-3);
+      border: solid 3px var(--lightColor-1);
       border-radius: 50% !important;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
       will-change: transform;
       transition: transform 450ms;
       transition-property: transform, opacity;
       transition-duration: 450ms;
+      padding: 0;
     }
 
     #goUpBtn:focus-visible, #goUpBtn:focus {

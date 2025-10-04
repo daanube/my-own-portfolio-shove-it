@@ -248,7 +248,6 @@
         grid-area: header;
         text-align: center;
         color: #ffffff;
-        /* height: 2rem; */
         display: flex;
         flex-direction: column;
     }
@@ -257,6 +256,7 @@
         grid-area: footer;
         color: #ffffff;
         text-align: center;
+        align-content: center;
         height: 2rem;
     }
 
@@ -264,6 +264,7 @@
         grid-area: left;
         color: #ffffff;
         text-align: center;
+        align-content: center;
     }
 
     .inner-timeline-item2 {
@@ -276,6 +277,7 @@
         grid-area: right;
         color: #ffffff;
         text-align: center;
+        align-content: center;
     }
 
     i.v-icon {
@@ -288,7 +290,7 @@
     }
 
     .companyName {
-        font-size: 6rem;
+        font-size: 4rem;
         font-weight: 600;
         margin: -0.5rem auto 0 auto;
         padding: 0;
