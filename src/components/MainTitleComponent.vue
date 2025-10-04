@@ -36,10 +36,10 @@
         padding: 0;
         margin: 0 auto;
         margin-left: 0.7rem;
-        padding: 3rem 0 4rem 0;
+        padding: 5rem 0 5rem 0;
         color: #fff;
         text-align: center;
-        font-size: 140px;
+        font-size: 120px;
         font-weight: bolder;
         text-transform: uppercase;
         z-index: 1;
@@ -50,7 +50,6 @@
         padding: 0;
         width: 100%;
         height: 45%;
-        /* background-image: v-bind("props.imageUrl"); */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
@@ -71,6 +70,6 @@
         background-size: cover;
         background-position: bottom;
         background-attachment: fixed;
-        filter: opacity(0.4);
+        filter: opacity(0.6);
     }
 </style>
