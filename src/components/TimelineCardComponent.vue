@@ -46,7 +46,7 @@
             </ul>
         </v-card-text>
         <v-card-actions>
-            <v-btn density="comfortable" variant="outlined" class="demoBtn">ver demo</v-btn>
+            <v-btn v-if=props.companyInfo.showDemo density="comfortable" variant="outlined" class="demoBtn">ver demo</v-btn>
         </v-card-actions>
     </v-card>  
 </template>
@@ -67,6 +67,9 @@
     .v-card-title,
     .v-card-text {
         padding: 0;
+    }
+    .v-card-text ul {
+        padding-right: 1rem;
     }
     .v-card-actions {
         padding: 0 0.5rem;
