@@ -58,7 +58,7 @@
 
 <style lang="css" scoped>
     .contactListArticle {
-        margin: 0 auto;
+        margin: 0 auto !important;
         padding: 0 1rem;
         display: flex;
         flex-flow: row;

@@ -5,46 +5,53 @@
         companyName: "IA 2030",
         companyDuration: "2022-2025",
         tasksList: [
-            "Crear un actualizador automático para una aplicación de escritorio.",
-            "Reestructurar completamente una app web creada en Vue3.",
-            "Realizar pruebas como QA y crear manuales de usuario.",
-        ]  
+            "Desarrollo del actualizador automático para la aplicación de escritorio principal de la empresa.",
+            "Mantenimiento y mejoras de dicha aplicación",
+            "Reestructuración completa de una app web creada en Vue3.",
+            "Pruebas como QA y creación de manuales de usuario.",
+        ],
+        showDemo: true  
     }
     const laboralHistory2 = {
         companyName: "Inside Market",
         companyDuration: "2022",
         tasksList: [
-            "Responsabilidad más larga para ver como se ve más texto",
-            "Responsabilidad 2",
-            "Responsabilidad 3",
-        ]  
+            "Desarrollo de una aplicación web de uso interno para el control, recepción y el ingreso de productos alimenticios que producen merma (frutas, hortalizas y verduras), para el cálculo de pérdida y el peso real ingresado al supermercado."
+        ],
+        showDemo: false
     }
     const laboralHistory3 = {
         companyName: "Teelo",
         companyDuration: "2021-2022",
         tasksList: [
-            "Responsabilidad más larga para ver como se ve más texto",
-            "Responsabilidad 2",
-            "Responsabilidad 3",
-        ]  
+            "Actualización y reestructuración visual de la App Web.",
+            "Maquetado de secciones. Corrección de bugs visuales y de comportamiento.", 
+            "Correcciones y mejoras para darle a la aplicación la identidad visual de la marca: Edición de imágenes para el uso dentro de 3 sites.", 
+            "Estandarización a nivel de formularios, Responsive design, User Interface, User Experience."
+        ],
+        showDemo: true
     }
     const laboralHistory4 = {
         companyName: "Norkut",
         companyDuration: "2018-2021",
         tasksList: [
-            "Responsabilidad más larga para ver como se ve más texto",
-            "Responsabilidad 2",
-            "Responsabilidad 3",
-        ]  
+            "Depuración, modificación y adecuación de métodos de búsqueda, filtrado y ordenamiento del catálogo de productos de un eCommerce, en conjunto con el Consultor de Base de datos.",
+            "Diseño e implementación de reportes, con Crystal Reports. Creación de las consultas necesarias para alimentar dichos reportes, a través de .Net Core y LINQ.",
+            "Desarrollo de las correcciones necesarias a nivel de código, debido a una migración de SQL Server a PostgreSQL.",
+            "Implementación, apoyo y seguimiento durante el periodo de prueba de la aplicación por parte del cliente. Desarrollo de las posteriores correcciones solicitadas por dicho cliente.", 
+            "Creación de micro servicios (C#), modelos y entidades. Creación de métodos para su consumo desde Angular.",
+            "Mejora de interfaces de usuario para ofrecer una mejor experiencia.",
+        ],
+        showDemo: true
     }
     const laboralHistory5 = {
         companyName: "BYOB",
         companyDuration: "2017-2018",
         tasksList: [
-            "Responsabilidad más larga para ver como se ve más texto",
-            "Responsabilidad 2",
-            "Responsabilidad 3",
-        ]  
+            "Creación de modelos y validaciones para módulos nuevos de la aplicación.",
+            "Apoyo a otros desarrolladores en el desarrollo de diferentes módulos, modelos y métodos para el uso de bases de datos no relacionales."
+        ],
+        showDemo: false
     }
 </script>
 

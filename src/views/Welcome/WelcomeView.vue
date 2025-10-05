@@ -115,7 +115,8 @@
         /* border-radius: 25px; */
     }
     #upright {
-        border-radius: 25px 25px 0 0;
+        /* border-radius: 25px 25px 0 0; */
+        border-radius: 10px;
         grid-area: upright;
         font-size: 2rem;
         font-weight: 700;
@@ -123,7 +124,8 @@
         /* white-space: pre-line; */
     }
     #downright {
-        border-radius: 0 0 25px 25px;
+        /* border-radius: 0 0 25px 25px; */
+        border-radius: 10px;
         grid-area: downright;
         display: flex;
     }
