@@ -2,11 +2,11 @@
     import SideBarLayout from '../../layouts/SideBarLayout.vue';
     import Article from '../../components/ArticleComponent.vue';
     import MainTitle from '../../components/MainTitleComponent.vue';
-import WindowShape from '../../components/WindowShape.vue';
+    import WindowShape from '../../components/WindowShapeComponent.vue';
     
     const title = "Venta y reparto de productos";
     const bgUrl = "/images/bgs/keyboard-mechanical-keyboard-3196030_1280-min.jpg";
-    const articleText = "Hola, soy delivery";  
+    const articleText = "demo info";  
 </script>
 
 <!-- //////////////////////////////////////////////////////////////////////// -->
@@ -18,11 +18,13 @@ import WindowShape from '../../components/WindowShape.vue';
             <div class="col-12 slotArea">
                 <MainTitle :mainTitleText='title' :image-url='`url(${bgUrl})`' />
                 
+                <!-- demo info -->
+                <Article :articleText="articleText" />
+                
                 <WindowShape>
                     <MainTitle :mainTitleText='title' :image-url='`url(${bgUrl})`' />
                 </WindowShape>
 
-                <Article :articleText="articleText" />
             </div>
         </div>
     </SideBarLayout>
