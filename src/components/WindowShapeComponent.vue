@@ -7,9 +7,21 @@
 <template>
     <main id="windowshape">
         <section id="titleBar">
-            <i>x</i>
-            <i>[]</i>
-            <i>_</i>
+            <v-icon
+                id="exit"
+                icon="mdi-circle"
+                size="medium"
+            ></v-icon>
+            <v-icon
+                id="max"
+                icon="mdi-circle"
+                size="medium"
+            ></v-icon>
+            <v-icon
+                id="min"
+                icon="mdi-circle"
+                size="medium"
+            ></v-icon>
         </section>
         <section id="frame">
             <slot />
@@ -22,7 +34,7 @@
 <style lang="css" scoped>
     #windowshape {
         margin: 3rem;
-        border: solid 5px #fff;
+        border: solid 1px var(--baseColor);
         display: grid;
         grid-template-areas: "titleBar" "frame";
         grid-template-rows: 1fr;
@@ -35,15 +47,25 @@
         flex-direction: row-reverse;
         grid-area: titleBar;
         height: 2rem;
+        padding-right: 0.5rem;
+        padding-top: 0.5rem;
     }
     #frame {
         grid-area: frame;
+        padding: 0.7rem;
     }
     i {
         font-size: 0.7rem;
         font-weight: 600;
-        border: 1px solid #fff;
-        color: #fff;
-        padding: 10px;
+        padding: 10px 5px;
+    }
+    #exit::before {
+        color: red;
+    }
+    #max::before {
+        color: yellow;
+    }
+    #min::before {
+        color: green;
     }
 </style>
