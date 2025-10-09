@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@mdi/font": "^7.4.47",
+    "@originjs/vite-plugin-federation": "^1.4.1",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.7.0",
     "typescript": "~5.8.3",
